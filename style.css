@@ -47,9 +47,10 @@
 .drop-area.active {
      border: 2px dashed var(--Neutral-500);
 }
-.inPut:active{
+.inPut:focus{
      cursor:text;
      border: 2px solid var(--Neutral-500);
+     outline: black;
 }
 .generate:focus {
      border: 2px solid black;

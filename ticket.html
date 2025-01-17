@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
+     <link href="output.css" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+
+     <title>Frontend Mentor | Conference ticket generator</title>
+
+</head>
+
+<body class="container min-h-screen">
+     <main class="pt-15">
+          <header class="text-center">
+               <div class="pt-10 flex justify-center align-middle">
+                    <img class="w-40" src="assets/images/logo-full.svg" alt="logo">
+               </div>
+               <div class="text-white pt-10 flex px-4 justify-center items-center">
+                    <div class="congrats">
+                         <h2 class=" font-bold text-3xl pb-4">Congrats, <span id="big-name">Jonathan kristof!</span> Your ticket is ready.
+                         </h2>
+                         <p class="mx-4 font-light text-base">We've emailed your ticket to <span id="my-email">jonathan@email.com</span> and will send updates in the run up to the event.</p>
+                    </div>
+               </div>
+          </header>
+
+          <div class="centerer flex justify-center ">
+               <div class="ticket text-white">
+                    <div class="main">
+                         <div class="pic-desript">
+                              <div class="pic-1 pic">
+                                   <img class="max-w-10 max-h-10 w-full" src="assets/images/logo-mark.svg">
+                              </div>
+                              <div class="descript">
+                                   <h2>Coding Conf</h2>
+                                   <span id="day">Jan 31, 2025 / Austin, TX</span>
+                              </div>
+                         </div>
+                         <div class="pic-desript second-pic-desript ">
+                              <div class="pic-2 pic">
+                                   <img id="picture"  class="max-w-10 max-h-10 w-full" src="assets/images/image-avatar.jpg">
+                              </div>
+                              <div class="descr">
+                                   <h2 id ="small-name">Jonathan kristof</h2>
+                                   <div class="git-acc">
+                                        <img src="assets/images/icon-github.svg">
+                                        <span id="git">@jonatankkristof0101</span>
+                                   </div>
+               
+                              </div>
+                         </div>
+                    </div>
+               
+                    <div class="nums">
+                         <h2 class="flex">
+                              <span>#</span> 
+                              <span id="ticket-num">00000</span>
+                         </h2>
+                    </div>
+               
+               
+               </div>
+          </div>
+
+
+     </main>
+
+     <div class="attribution text-white py-4">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+          Coded by <a href="#">Medan</a>.
+     </div>
+
+     
+</body>
+<script src="ticket.js"></script>
+</html>

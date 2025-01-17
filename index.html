@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
+     <link href="output.css" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+
+     <title>Frontend Mentor | Conference ticket generator</title>
+
+</head>
+
+<body class="container min-h-screen">
+     <main class="main">
+          <header class="text-center">
+               <div class="pt-10 flex justify-center align-middle">
+                    <img class="w-40 logo" src="assets/images/logo-full.svg" alt="logo">
+               </div>
+               <div class="text-white pt-10 flex px-4 justify-center items-center">
+                    <div class="max-w-lg">
+                         <h2 class=" font-bold text-3xl md:text-4xl pb-4">Your Journey to Coding Conf 2025 Starts Here!</h2>
+                         <p class=" font-light text-base">Secure your spot at next year's biggest coding conference.</p>
+                    </div>
+               </div>
+          </header>
+
+          <div class="text-white pt-10 flex justify-center">
+               <div class="max-w-3xl drop" >
+                    <h4 class="text-left text-xl">Upload Avatar</h4>
+
+                    <label for="fileInput" class="drop-area flex flex-col items-center justify-center py-3  my-4 rounded-lg bg-white/10 backdrop-blur-lg border-white border border-dashed cursor-pointer">
+                         <div class="avatar bg-white/10 backdrop-blur-lg rounded-xl"></div>
+                         <div id="image-display">
+                              <h4 class="drag">Drag and drop or click to upload</h4>
+                              <input type="file" id="fileInput" accept="image/*" hidden >
+                         </div>
+                    </label>
+
+                    
+                    <div class="flex gap-1 mb-4">
+                         <img id="info" src="assets/images/icon-info.svg">
+                         <p class="text-xs error">Upload your photo (JPG or PNG, max size: 500KB).</p>
+                    </div>
+               </div>
+          </div>
+          
+
+          <section class="text-white mb-20 flex justify-center">
+               <div class= "text-center max-w-3xl">
+                    <div class="form">
+                         <h3 class="text-left">Full Name</h3>
+                         <input type="text" id="name" name="name"
+                              class="inPut cursor-pointer my-4 p-3 rounded-lg bg-white/10 backdrop-blur-lg border-white  border">
+                    </div>
+                    <div class="form">
+                         <h3 class="text-left">Email Address</h3>
+                         <input type="email" id="email" name="email"
+                              class="inPut cursor-pointer my-4 p-3 rounded-lg bg-white/10 backdrop-blur-lg border-white border"
+                              aria-label="Email Address" placeholder="example@email.com">
+                    </div>
+                    <div id="warner">
+                         <div id="wraped" class="flex gap-1 mb-4">
+                              <img src="assets/images/icon-info-red.svg">
+                              <p class="text-xs">Please enter a valid email address.</p>
+                         </div>
+                    </div>
+
+                    <div class="form">
+                         <h3 class="text-left">GitHub Username</h3>
+                         <input type="text" placeholder="@yourusername"
+                              class="inPut cursor-pointer my-4 p-3 rounded-lg bg-white/10 backdrop-blur-lg border-white border"
+                              id="username" name="username" aria-label="GitHub-Username">
+                    </div>
+                    <button class="form generate orange-bg my-4 w-11/12 p-3 rounded-lg text-black font-bold">Generate My Ticket</button>
+               </div>
+               
+          </section>
+
+     </main>
+
+     <div class="attribution text-white py-4">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+          Coded by <a href="#">Medan</a>.
+     </div>
+
+     
+
+</body>
+<script src="app.js"></script>
+</html>
